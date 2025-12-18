@@ -5,17 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Haribhavan</title>
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="mobile_view.css">
 </head>
 <body class="body">
     <header class="header">
-        <img src="headerimg.jpg">
-            <ul class="nav-links">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="catering.html">Catering</a></li>
-                <li><a href="hall.html">Hall</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+        <img src="headerimg.jpg" alt="Header Image">
+
+        <!-- MOBILE MENU CHECKBOX -->
+        <input type="checkbox" id="menu-toggle">
+
+        <!-- HAMBURGER ICON -->
+        <label for="menu-toggle" class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="catering.html">Catering</a></li>
+            <li><a href="hall.html">Hall</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </header><br><br>
 
 <div class="container">
@@ -61,56 +72,13 @@
     </div>
 
 </div>
-    <div style="
-    background-color: orange;
-    padding: 20px 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;margin-top: 35px;">
-    <p style="
-        font-size: xx-large;
-        font-weight: bold;
-        color: white;
-        margin: 0;
-        white-space: nowrap;
-        padding-left: 100px;
-    ">
-        Subscribe Our Newsletter
-    </p>
-
-    <form style="
-        display: flex;
-        align-items: center;
-        margin-left: 40px;
-    ">
-        <input 
-            type="email" 
-            placeholder="Your email"
-            style="
-                height: 50px;
-                width: 500px;
-                padding: 0 15px;
-                border: none;
-                border-radius: 6px 0 0 6px;
-                outline: none;
-                font-size: 16px;
-            "
-        >
-        <button 
-            style="
-                height: 50px;
-                padding: 0 30px;
-                background-color: red;
-                border: none;
-                color: white;
-                font-weight: bold;
-                border-radius: 0 6px 6px 0;
-                cursor: pointer;
-            "
-        >
-            SUBSCRIBE
-        </button>
-    </form>
+<div class="newsletter">
+  <p>Subscribe Our Newsletter</p>
+  <form>
+    <input type="email" placeholder="Your email">
+    <button type="submit">SUBSCRIBE</button>
+  </form>
+</div>
 </div>
 <footer class="footer">
   <div class="footer-container">
